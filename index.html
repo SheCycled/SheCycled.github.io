@@ -6,46 +6,76 @@
 <title>SheCycled - She + Recycles</title>
 <style>
 body{margin:0;font-family:Arial,sans-serif;background:#f9fbf9;color:#222}
-header{background:#0a4d2e;color:white;padding:18px 20px;display:flex;align-items:center;justify-content:space-between;position:relative}
-header img{height:50px;width:50px;border-radius:50%;background:white}
-header h1{margin:0;font-size:26px;position:absolute;left:50%;transform:translateX(-50%)}
-header p.subtitle{margin:0;font-size:12px;color:#ffd166;position:absolute;left:50%;top:48px;transform:translateX(-50%);letter-spacing:1px}
+header{background:#0a4d2e;color:white;padding:22px;text-align:center}
+header h1{margin:0;font-size:36px}
+header p{margin:6px 0 0;color:#ffd166;letter-spacing:1px;font-size:16px}
 nav{background:#0e6b40;padding:12px;text-align:center;position:sticky;top:0;z-index:10}
 nav a{color:white;margin:0 14px;text-decoration:none;font-weight:bold;font-size:14px}
-nav a.active{color:#ffd166;border-bottom:2px solid #ffd166;padding-bottom:3px}
-.hero{background:#faf7f5;padding:100px 20px;text-align:center}
-.hero h1{font-size:42px;color:#0a4d2e;margin:0}
-.hero p{font-size:18px;color:#555;max-width:600px;margin:15px auto 25px}
-.btn{display:inline-block;background:#0a4d2e;color:white;padding:14px 28px;border-radius:30px;text-decoration:none;font-weight:bold}
-.features{max-width:1000px;margin:60px auto;padding:0 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
-.card{background:white;padding:25px;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,0.06)}
-.card h3{color:#0a4d2e;margin-top:0}
-footer{background:#0a4d2e;color:white;text-align:center;padding:30px 20px;margin-top:40px}
+.hero{padding:80px 20px;text-align:center;background:linear-gradient(rgba(10,77,46,0.85),rgba(10,77,46,0.6)), url('./file_0000000070f871f49968758b1aba265a.png');background-size:cover;background-position:center;color:white}.hero h2{font-size:42px;margin:0;line-height:1.2}
+.hero p{font-size:18px;max-width:650px;margin:15px auto}
+.btn{background:#ffd166;color:#0a4d2e;border:none;padding:13px 28px;font-size:16px;font-weight:bold;border-radius:30px;cursor:pointer;display:inline-block;text-decoration:none}
+section{padding:50px 20px;max-width:1100px;margin:auto}
+h2.section-title{text-align:center;color:#0a4d2e;font-size:30px;margin-bottom:30px}
+.cards{display:flex;gap:20px;flex-wrap:wrap;justify-content:center}
+.card{background:white;box-shadow:0 3px 12px rgba(0,0,0,0.08);border-radius:14px;padding:22px;width:300px;text-align:center}
+.sdg-grid{display:flex;gap:20px;flex-wrap:wrap;justify-content:center}
+.sdg-card{width:240px;border-radius:14px;overflow:hidden;background:white;box-shadow:0 3px 12px rgba(0,0,0,0.08);text-align:left}
+.sdg-top{padding:20px;color:white;display:flex;align-items:center;gap:10px}
+.sdg-top .num{font-size:48px;font-weight:900;line-height:1}
+.sdg-top .label{font-size:14px;font-weight:bold;line-height:1.2}
+.sdg-body{padding:15px}.sdg-body p{font-size:13px;color:#555;margin:5px 0 0}
+.sdg-5{background:#FF3A21} .sdg-13{background:#3F7E44} .sdg-11{background:#FD9D24} .sdg-8{background:#A21942}
+.supported{background:white;text-align:center;padding:50px 20px;border-top:1px solid #eee}
+.supported h4{color:#888;letter-spacing:2px;font-size:12px;margin:0 0 25px}
+.support-logos{display:flex;justify-content:center;align-items:center;gap:40px;flex-wrap:wrap}
+.logo-box{font-weight:bold;font-size:22px;color:#0a4d2e;background:#f2f7f2;padding:14px 28px;border-radius:10px;border:1px dashed #0a4d2e}
+footer{background:#0a4d2e;color:white;text-align:center;padding:30px 20px;margin-top:0}
 </style>
 </head>
 <body>
-<header>
-<img src="IMG-20260919-WA6089.jpg" alt="SheCycled">
-<h1>SheCycled</h1>
-<p class="subtitle">She + Recycles</p>
-</header>
-<nav>
-<a href="index.html" class="active">Home</a>
-<a href="about.html">About</a>
-<a href="#">Programs</a>
-<a href="#">Impact</a>
-<a href="#">Contact</a>
-</nav>
+<header><img src="IMG-20260919-WA6089.jpg" style="height:55px;width:55px;border-radius:50%;position:absolute;left:20px;top:15px;background:white;object-fit:cover;"><h1>SheCycled</h1><p>She + Recycles</p></header>
+<nav><a href="index.html">Home</a><a href="about.html">About</a><a href="#">Programs</a><a href="#">Impact</a><a href="#">Contact</a></nav>
+
 <div class="hero">
-<h1>Transforming Waste to Dignity</h1>
-<p>Biodegradable pads from banana stems — ending period poverty in Jos and beyond.</p>
-<a href="about.html" class="btn">Our Story</a>
+<h2>Transforming Environmental Waste To Dignity </h2>
+<p> A circular economy social enterprise that promotes climate education, transforms agricultural waste into biodegradable sanitary pads, advance mentrual health and dignity.</p>
+<br><a class="btn" href="#">Join Our Movement</a>
 </div>
-<div class="features">
-<div class="card"><h3>♻️ Circular Economy</h3><p>We turn agricultural waste into sustainable menstrual products.</p></div>
-<div class="card"><h3>🌱 Climate Action</h3><p>Promoting environmental education in Plateau & Adamawa schools.</p></div>
-<div class="card"><h3>👩‍🌾 Empowering Women</h3><p>Creating jobs for rural farmers and women entrepreneurs.</p></div>
+
+<p style="background:#0a4d2e;color:white;padding:15px 20px;border-radius:8px;margin-top:20px;">
+<strong>Our Vision:</strong> To ensure that by 2030, every woman and girl in underserved communities across Middle Belt, Nigeria has access to free or affordable menstrual products in schools and workplaces.
+</p>
 </div>
-<footer>© 2026 SheCycled - She + Recycles</footer>
+</section>
+<section>
+<h2 class="section-title">What We Do</h2>
+<div class="cards">
+<div class="card"><h3>🚲 Skills Training</h3><p>Teaching women and girls to ride, repair and own bicycles confidently.</p></div>
+<div class="card"><h3>🎓 Education Support</h3><p>Bicycles help girls get to school faster, safer and stay longer.</p></div>
+<div class="card"><h3>💼 Economic Power</h3><p>Women use bicycles for market access and financial independence.</p></div>
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Here's How We Contribute to the SDGs</h2>
+<div class="sdg-grid">
+<div class="sdg-card"><div class="sdg-top sdg-5"><div class="num">5</div><div class="label">GENDER<br>EQUALITY</div></div><div class="sdg-body"><b>Empowering Women & Girls</b><p>SheCycled puts women in motion — giving them freedom, safety and voice.</p></div></div>
+<div class="sdg-card"><div class="sdg-top sdg-13"><div class="num">13</div><div class="label">CLIMATE<br>ACTION</div></div><div class="sdg-body"><b>Building Climate Resilience</b><p>Every bicycle replaces fossil fuel trips — zero-emission mobility.</p></div></div>
+<div class="sdg-card"><div class="sdg-top sdg-11"><div class="num">11</div><div class="label">SUSTAINABLE<br>CITIES</div></div><div class="sdg-body"><b>Cleaner, Accessible Cities</b><p>Making cities inclusive, safe and sustainable with women-led cycling.</p></div></div>
+<div class="sdg-card"><div class="sdg-top sdg-8"><div class="num">8</div><div class="label">DECENT WORK</div></div><div class="sdg-body"><b>Growing Livelihoods</b><p>Women use bicycles to grow businesses and access markets.</p></div></div>
+</div>
+</section>
+
+<div class="supported">
+<h4>SUPPORTED & BACKED BY</h4>
+<div class="support-logos">
+<div class="logo-box">Genetti Eco 🌱</div>
+<div style="color:#666;font-size:14px;max-width:300px;text-align:left;">Proudly supported by Genetti Eco — our partner in transforming waste to dignity and sustainable impact.</div>
+</div>
+</div>
+
+<footer>
+<p>© 2025 SheCycled — Transforming Waste to Dignity<br>https://shecycled.github.io | Supported by Genetti Eco</p>
+</footer>
 </body>
 </html>
