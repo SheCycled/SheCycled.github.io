@@ -4,49 +4,86 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact - SheCycled</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <style>
-body{font-family:Arial,sans-serif;margin:0;background:#fff;color:#333}
-nav{padding:15px 20px;background:#fff;display:flex;align-items:center;gap:20px;border-bottom:1px solid #eee}
-nav a{color:#0a4d2e;text-decoration:none;font-weight:600;margin-right:15px}
-.contact-box{max-width:700px;margin:50px auto;padding:20px;text-align:center}
-h1{color:#0a4d2e}
+/* SMOOTH TRANSITION EFFECT */
+@keyframes fadeInUp {
+  from { opacity:0; transform: translateY(20px); }
+  to { opacity:1; transform: translateY(0); }
+}
+@keyframes pageFade {
+  from { opacity:0; }
+  to { opacity:1; }
+}
+body{margin:0;font-family:Arial,sans-serif;background:#f9fbf9;color:#222;line-height:1.7;animation: pageFade 0.8s ease-out}
+header{background:#0a4d2e;color:white;padding:18px 20px;display:flex;align-items:center;justify-content:space-between;position:relative}
+header img{height:50px;width:50px;border-radius:50%;background:white;object-fit:cover}
+header h1{margin:0;font-size:26px;position:absolute;left:50%;transform:translateX(-50%)}
+header p.subtitle{margin:0;font-size:12px;color:#ffd166;position:absolute;left:50%;top:48px;transform:translateX(-50%);letter-spacing:1px}
+nav{background:#0e6b40;padding:12px;text-align:center;position:sticky;top:0;z-index:10}
+nav a{color:white;margin:0 14px;text-decoration:none;font-weight:bold;font-size:14px}
+nav a.active{color:#ffd166;border-bottom:2px solid #ffd166;padding-bottom:3px}
+.hero-contact{background:#faf7f5;padding:80px 20px;text-align:center;animation: fadeInUp 1s ease-out 0.2s both}
+.hero-contact h1{font-size:42px;color:#0a4d2e;margin:0}
+.hero-contact p{max-width:600px;margin:20px auto 0;color:#666;font-size:17px}
+.box{max-width:1000px;margin:0 auto;padding:40px 20px;display:grid;grid-template-columns:1fr 1fr;gap:25px}
+@media(max-width:750px){.box{grid-template-columns:1fr}}
+.card{background:white;padding:28px;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,0.06);animation: fadeInUp 1s ease-out both}
+.card:nth-child(1){animation-delay: 0.4s}
+.card:nth-child(2){animation-delay: 0.6s}
+.card h3{color:#0a4d2e;margin-top:0}
+input,textarea{width:100%;padding:12px;margin:8px 0 14px;border:1px solid #ddd;border-radius:6px;box-sizing:border-box;font-family:Arial}
+button{background:#0a4d2e;color:white;border:none;padding:14px;border-radius:30px;font-weight:bold;width:100%;cursor:pointer;font-size:16px;transition:0.3s}
+button:hover{background:#0e6b40;transform:scale(1.02)}
+.social{margin-top:20px;display:flex;gap:15px;flex-wrap:wrap}
+.social a{text-decoration:none;color:#0a4d2e;font-weight:bold;background:#eef6f0;padding:8px 14px;border-radius:20px;font-size:14px;transition:0.3s}
+.social a:hover{background:#0a4d2e;color:white}
+footer{background:#0a4d2e;color:white;text-align:center;padding:30px 20px;margin-top:30px}
 </style>
 </head>
 <body>
-
+<header>
+<img src="IMG-20260919-WA6089.jpg" alt="SheCycled">
+<h1>SheCycled</h1>
+<p class="subtitle">She + Recycles</p>
+</header>
 <nav>
 <a href="index.html">Home</a>
 <a href="about.html">About</a>
-<a href="contact.html">Contact</a>
+<a href="#">Programs</a>
+<a href="#">Impact</a>
+<a href="contact.html" class="active">Contact</a>
 </nav>
 
-<div class="contact-box">
-<h1>Contact Us</h1>
-<p>Email us at: <b>contact@shecycled.com</b></p>
-<p>We would love to hear from you!</p>
+<div class="hero-contact">
+<h1>Let's Build Together</h1>
+<p>We would love to hear from you. Partner, volunteer, or bring SheCycled to your community.</p>
+</div>
 
-<!-- FOLLOW US - Looks exactly like your photo -->
-<div style="margin-top:50px;">
-<p style="letter-spacing:3px;color:#777;font-size:13px;font-weight:bold;">FOLLOW US</p>
-<div style="display:flex;justify-content:center;gap:15px;margin-top:20px;">
-
-<a href="#" style="width:52px;height:52px;border-radius:50%;border:1px solid #d1d1d1;display:flex;align-items:center;justify-content:center;color:#0a4d2e;text-decoration:none;font-size:20px;">
-<i class="fab fa-facebook-f"></i>
-</a>
-
-<a href="#" style="width:52px;height:52px;border-radius:50%;border:1px solid #d1d1d1;display:flex;align-items:center;justify-content:center;color:#0a4d2e;text-decoration:none;font-size:20px;">
-<i class="fab fa-instagram"></i>
-</a>
-
-<a href="#" style="width:52px;height:52px;border-radius:50%;border:1px solid #d1d1d1;display:flex;align-items:center;justify-content:center;color:#0a4d2e;text-decoration:none;font-size:20px;">
-<i class="fab fa-linkedin-in"></i>
-</a>
-
+<div class="box">
+<div class="card">
+<h3>📍 Our Address</h3>
+<p>No. 9, 30252 Little Rayfield,<br>Plateau State, Nigeria</p>
+<h3>📧 Email Us</h3>
+<p>support@shecycled.org</p>
+<h3>📞 Call / WhatsApp</h3>
+<p>+234 807 544 3699</p>
+<h3>🌐 Follow Us</h3>
+<div class="social">
+<a href="https://instagram.com/SheCycled" target="_blank">📸 Instagram — SheCycled</a>
+<a href="https://facebook.com/SheCycled" target="_blank">📘 Facebook — SheCycled</a>
+<a href="https://linkedin.com/company/SheCycled" target="_blank">💼 LinkedIn — SheCycled</a>
+</div>
+</div>
+<div class="card">
+<h3>Send Us a Message</h3>
+<input type="text" placeholder="Your Full Name">
+<input type="email" placeholder="Your Email Address">
+<input type="text" placeholder="Subject (e.g Partnership)">
+<textarea rows="5" placeholder="Write your message here..."></textarea>
+<button>Send Message</button>
 </div>
 </div>
 
-</div>
-
+<footer>© 2026 SheCycled - She + Recycles | Little Rayfield, Jos</footer>
 </body>
 </html>
