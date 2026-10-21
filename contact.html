@@ -34,9 +34,13 @@ nav a.active{color:#ffd166;border-bottom:2px solid #ffd166;padding-bottom:3px}
 input,textarea{width:100%;padding:12px;margin:8px 0 14px;border:1px solid #ddd;border-radius:6px;box-sizing:border-box;font-family:Arial}
 button{background:#0a4d2e;color:white;border:none;padding:14px;border-radius:30px;font-weight:bold;width:100%;cursor:pointer;font-size:16px;transition:0.3s}
 button:hover{background:#0e6b40;transform:scale(1.02)}
-.social{margin-top:20px;display:flex;gap:15px;flex-wrap:wrap}
-.social a{text-decoration:none;color:#0a4d2e;font-weight:bold;background:#eef6f0;padding:8px 14px;border-radius:20px;font-size:14px;transition:0.3s}
-.social a:hover{background:#0a4d2e;color:white}
+
+/* NEW FOLLOW US STYLE - CIRCLE ICONS LIKE YOUR 2ND PHOTO */
+.follow-title{font-size:12px;letter-spacing:2.5px;color:#9aa0a9;font-weight:700;margin:28px 0 16px 0;text-transform:uppercase;}
+.follow-circles{display:flex;gap:14px;align-items:center;}
+.circle-icon{width:54px;height:54px;border-radius:50%;border:1.5px solid #e5e7eb;display:flex;align-items:center;justify-content:center;text-decoration:none;color:#6b7280;background:#fff;transition:0.3s}
+.circle-icon:hover{border-color:#0a4d2e;color:#0a4d2e;transform:translateY(-2px);box-shadow:0 4px 10px rgba(0,0,0,0.06)}
+
 footer{background:#0a4d2e;color:white;text-align:center;padding:30px 20px;margin-top:30px}
 </style>
 </head>
@@ -67,12 +71,24 @@ footer{background:#0a4d2e;color:white;text-align:center;padding:30px 20px;margin
 <p>support@shecycled.org</p>
 <h3>📞 Call / WhatsApp</h3>
 <p>+234 807 544 3699</p>
-<h3>🌐 Follow Us</h3>
-<div class="social">
-<a href="https://instagram.com/SheCycled" target="_blank">📸 Instagram — SheCycled</a>
-<a href="https://facebook.com/SheCycled" target="_blank">📘 Facebook — SheCycled</a>
-<a href="https://linkedin.com/company/SheCycled" target="_blank">💼 LinkedIn — SheCycled</a>
+
+<!-- UPDATED FOLLOW US - EXACTLY LIKE 2ND PHOTO -->
+<p class="follow-title">FOLLOW US</p>
+<div class="follow-circles">
+  <!-- Instagram -->
+  <a href="https://instagram.com/SheCycled" target="_blank" class="circle-icon" aria-label="Instagram">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+  </a>
+  <!-- Facebook -->
+  <a href="https://facebook.com/SheCycled" target="_blank" class="circle-icon" aria-label="Facebook">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+  </a>
+  <!-- LinkedIn -->
+  <a href="https://linkedin.com/company/SheCycled" target="_blank" class="circle-icon" aria-label="LinkedIn">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+  </a>
 </div>
+
 </div>
 <div class="card">
 <h3>Send Us a Message</h3>
