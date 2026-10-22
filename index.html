@@ -39,17 +39,58 @@ footer{background:#0a4d2e;color:white;text-align:center;padding:30px 20px;margin
 <div class="hero">
 <h2>Transforming Environmental Waste To Dignity </h2>
 <p> A circular economy social enterprise that promotes climate education, transforms agricultural waste into biodegradable sanitary pads, advance mentrual health and dignity.</p>
-<br><a class="btn" href="#">Join Our Movement</a>
-transform: translateX(-120px) // left from nowhere
-transform: translateX(120px)  // right from nowhere  
-transform: translateY(100px)  // middle from bottom
-    </div>
+
   </div>
 </section>
 
 <section style="padding:60px 0; background:#f9fbf9; overflow:hidden;">
 <h2 class="section-title" style="text-align:center; color:#0a4d2e;">Here's How We Contribute to the SDGs</h2>
 
+    <!-- WHAT WE DO - 2 Sides High, 1 Middle Lower + Geotek Effect -->
+<section style="padding:80px 20px; background:#ffffff; overflow:hidden;">
+  <h2 style="text-align:center; font-size:38px; font-weight:700; margin-bottom:50px;">What We Do</h2>
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:28px; max-width:1200px; margin:0 auto; align-items:flex-start;">
+    <div id="what-left" style="width:100%; max-width:340px; height:380px; border-radius:20px; overflow:hidden; position:relative; box-shadow:0 10px 30px rgba(0,0,0,0.13); transform:translateX(-120px); opacity:0; transition:all 1.2s cubic-bezier(0.22,1,0.36,1);">
+      <img src="IMG-20260919-WA6089.jpg" style="width:100%; height:100%; object-fit:cover; object-position:center;">
+      <div style="position:absolute; inset:0; background:linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(20,80,25,0.85));"></div>
+      <div style="position:absolute; bottom:0; left:0; width:100%; padding:20px; color:white; z-index:2;">
+        <h3 style="margin:0 0 5px; font-size:19px;">Climate Education</h3>
+        <p style="margin:0; font-size:13px;">Educating students and communities about environmental protection.</p>
+      </div>
+    </div>
+    <div id="what-middle" style="width:100%; max-width:340px; height:380px; border-radius:20px; overflow:hidden; position:relative; box-shadow:0 10px 30px rgba(0,0,0,0.13); margin-top:60px; transform:translateY(100px); opacity:0; transition:all 1.2s cubic-bezier(0.22,1,0.36,1) 0.25s;">
+      <img src="IMG-20261022-WA6272.jpg" style="width:100%; height:100%; object-fit:cover; object-position:center;">
+      <div style="position:absolute; inset:0; background:linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(20,80,25,0.85));"></div>
+      <div style="position:absolute; bottom:0; left:0; width:100%; padding:20px; color:white; z-index:2;">
+        <h3 style="margin:0 0 5px; font-size:19px;">Circular Economy</h3>
+        <p style="margin:0; font-size:13px;">Transforming agro-wastes into sustainable biodegradable pads.</p>
+      </div>
+    </div>
+    <div id="what-right" style="width:100%; max-width:340px; height:380px; border-radius:20px; overflow:hidden; position:relative; box-shadow:0 10px 30px rgba(0,0,0,0.13); transform:translateX(120px); opacity:0; transition:all 1.2s cubic-bezier(0.22,1,0.36,1) 0.5s;">
+      <img src="IMG-20260919-WA6089.jpg" style="width:100%; height:100%; object-fit:cover; object-position:center;">
+      <div style="position:absolute; inset:0; background:linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(20,80,25,0.85));"></div>
+      <div style="position:absolute; bottom:0; left:0; width:100%; padding:20px; color:white; z-index:2;">
+        <h3 style="margin:0 0 5px; font-size:19px;">Menstrual Health & Dignity</h3>
+        <p style="margin:0; font-size:13px;">Addressing period poverty among underserved women and girls.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+const whatObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      document.getElementById('what-left').style.transform = 'translateX(0)';
+      document.getElementById('what-left').style.opacity = '1';
+      document.getElementById('what-middle').style.transform = 'translateY(0)';
+      document.getElementById('what-middle').style.opacity = '1';
+      document.getElementById('what-right').style.transform = 'translateX(0)';
+      document.getElementById('what-right').style.opacity = '1';
+    }
+  });
+}, { threshold: 0.15 });
+whatObserver.observe(document.getElementById('what-middle'));
+</script>
 <div class="sdg-marquee">
   <div class="sdg-track">
     
