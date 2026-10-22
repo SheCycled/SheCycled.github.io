@@ -42,75 +42,39 @@ footer{background:#0a4d2e;color:white;text-align:center;padding:30px 20px;margin
 <br><a class="btn" href="#">Join Our Movement</a>
 </div>
 
-<!-- WHAT WE DO - Pyramid Layout + Green Veil + Fade + Slide From Nowhere -->
+<!-- WHAT WE DO - 2 Sides High, 1 Middle Lower -->
 <section style="padding:80px 20px; background:#ffffff; overflow:hidden;">
   <h2 style="text-align:center; font-size:38px; font-weight:700; margin-bottom:50px;">What We Do</h2>
-  <div style="max-width:800px; margin:0 auto;">
-    <!-- TOP ROW: 2 pictures -->
-    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:28px;">
-      <div id="box-left" style="width:100%; max-width:350px; height:480px; border-radius:20px; overflow:hidden; position:relative; box-shadow:0 10px 30px rgba(0,0,0,0.13); transform:translateX(-100px); opacity:0; transition:all 1.1s ease-out;">
-        <div class="what-slideshow" style="width:100%; height:100%; position:relative;">
-          <img src="IMG-20260919-WA6089.jpg" class="what-slide" style="position:absolute; width:100%; height:100%; object-fit:cover; opacity:1; transition:opacity 1.8s;">
-          <img src="IMG-20261022-WA6272.jpg" class="what-slide" style="position:absolute; width:100%; height:100%; object-fit:cover; opacity:0; transition:opacity 1.8s;">
-          <div style="position:absolute; inset:0; background:linear-gradient(to bottom, rgba(220,245,220,0.10), rgba(56,142,60,0.62)); z-index:1;"></div>
-        </div>
-        <div style="position:absolute; bottom:0; left:0; width:100%; padding:24px 20px; color:white; z-index:2;">
-          <h3 style="margin:0 0 6px; font-size:20px;">Climate Education</h3>
-          <p style="margin:0; font-size:14px;">Educating students and communities about environmental protection.</p>
-        </div>
-      </div>
-      <div id="box-right" style="width:100%; max-width:350px; height:480px; border-radius:20px; overflow:hidden; position:relative; box-shadow:0 10px 30px rgba(0,0,0,0.13); transform:translateX(100px); opacity:0; transition:all 1.1s ease-out 0.2s;">
-        <div class="what-slideshow" style="width:100%; height:100%; position:relative;">
-          <img src="IMG-20261022-WA6272.jpg" class="what-slide" style="position:absolute; width:100%; height:100%; object-fit:cover; opacity:1; transition:opacity 1.8s;">
-          <img src="IMG-20260919-WA6089.jpg" class="what-slide" style="position:absolute; width:100%; height:100%; object-fit:cover; opacity:0; transition:opacity 1.8s;">
-          <div style="position:absolute; inset:0; background:linear-gradient(to bottom, rgba(220,245,220,0.10), rgba(56,142,60,0.62)); z-index:1;"></div>
-        </div>
-        <div style="position:absolute; bottom:0; left:0; width:100%; padding:24px 20px; color:white; z-index:2;">
-          <h3 style="margin:0 0 6px; font-size:20px;">Menstrual Health & Dignity</h3>
-          <p style="margin:0; font-size:14px;">Addressing period poverty among underserved women and girls.</p>
-        </div>
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:28px; max-width:1200px; margin:0 auto; align-items:flex-start;">
+    <!-- LEFT SIDE -->
+    <div style="width:100%; max-width:340px; height:380px; border-radius:20px; overflow:hidden; position:relative; box-shadow:0 10px 30px rgba(0,0,0,0.13);">
+      <img src="IMG-20260919-WA6089.jpg" style="width:100%; height:100%; object-fit:cover; object-position:center;">
+      <div style="position:absolute; inset:0; background:linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(20,80,25,0.8));"></div>
+      <div style="position:absolute; bottom:0; left:0; width:100%; padding:20px; color:white; z-index:2;">
+        <h3 style="margin:0 0 5px; font-size:19px;">Climate Education</h3>
+        <p style="margin:0; font-size:13px;">Educating students and communities about environmental protection.</p>
       </div>
     </div>
-    <!-- BOTTOM ROW: 1 picture at MIDDLE -->
-    <div style="display:flex; justify-content:center; margin-top:28px;">
-      <div id="box-center" style="width:100%; max-width:350px; height:480px; border-radius:20px; overflow:hidden; position:relative; box-shadow:0 10px 30px rgba(0,0,0,0.13); transform:translateY(80px); opacity:0; transition:all 1.1s ease-out 0.4s;">
-        <div class="what-slideshow" style="width:100%; height:100%; position:relative;">
-          <img src="IMG-20260919-WA6089.jpg" class="what-slide" style="position:absolute; width:100%; height:100%; object-fit:cover; opacity:1; transition:opacity 1.8s;">
-          <img src="IMG-20261022-WA6272.jpg" class="what-slide" style="position:absolute; width:100%; height:100%; object-fit:cover; opacity:0; transition:opacity 1.8s;">
-          <div style="position:absolute; inset:0; background:linear-gradient(to bottom, rgba(220,245,220,0.10), rgba(56,142,60,0.62)); z-index:1;"></div>
-        </div>
-        <div style="position:absolute; bottom:0; left:0; width:100%; padding:24px 20px; color:white; z-index:2;">
-          <h3 style="margin:0 0 6px; font-size:20px;">Circular Economy</h3>
-          <p style="margin:0; font-size:14px;">Transforming agro-wastes into sustainable biodegradable menstrual pads.</p>
-        </div>
+    <!-- MIDDLE - SLIGHTLY LOWER -->
+    <div style="width:100%; max-width:340px; height:380px; border-radius:20px; overflow:hidden; position:relative; box-shadow:0 10px 30px rgba(0,0,0,0.13); margin-top:60px;">
+      <img src="IMG-20261022-WA6272.jpg" style="width:100%; height:100%; object-fit:cover; object-position:center;">
+      <div style="position:absolute; inset:0; background:linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(20,80,25,0.8));"></div>
+      <div style="position:absolute; bottom:0; left:0; width:100%; padding:20px; color:white; z-index:2;">
+        <h3 style="margin:0 0 5px; font-size:19px;">Circular Economy</h3>
+        <p style="margin:0; font-size:13px;">Transforming agro-wastes into sustainable biodegradable pads.</p>
+      </div>
+    </div>
+    <!-- RIGHT SIDE -->
+    <div style="width:100%; max-width:340px; height:380px; border-radius:20px; overflow:hidden; position:relative; box-shadow:0 10px 30px rgba(0,0,0,0.13);">
+      <img src="IMG-20260919-WA6089.jpg" style="width:100%; height:100%; object-fit:cover; object-position:center;">
+      <div style="position:absolute; inset:0; background:linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(20,80,25,0.8));"></div>
+      <div style="position:absolute; bottom:0; left:0; width:100%; padding:20px; color:white; z-index:2;">
+        <h3 style="margin:0 0 5px; font-size:19px;">Menstrual Health & Dignity</h3>
+        <p style="margin:0; font-size:13px;">Addressing period poverty among underserved women and girls.</p>
       </div>
     </div>
   </div>
 </section>
-<script>
-document.querySelectorAll('.what-slideshow').forEach(box => {
-  const slides = box.querySelectorAll('.what-slide');
-  let i = 0;
-  setInterval(() => {
-    slides[i].style.opacity = '0';
-    i = (i+1) % slides.length;
-    slides[i].style.opacity = '1';
-  }, 4000);
-});
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      document.getElementById('box-left').style.transform = 'translateX(0)';
-      document.getElementById('box-left').style.opacity = '1';
-      document.getElementById('box-right').style.transform = 'translateX(0)';
-      document.getElementById('box-right').style.opacity = '1';
-      document.getElementById('box-center').style.transform = 'translateY(0)';
-      document.getElementById('box-center').style.opacity = '1';
-    }
-  });
-}, { threshold: 0.15 });
-observer.observe(document.getElementById('box-center'));
-</script>
 
 <section style="padding:60px 0; background:#f9fbf9; overflow:hidden;">
 <h2 class="section-title" style="text-align:center; color:#0a4d2e;">Here's How We Contribute to the SDGs</h2>
