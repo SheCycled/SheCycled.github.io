@@ -73,6 +73,8 @@ Line 55: <div id="what-left" ...>  <- YOUR NEW CODE STARTS HERE
   </div>
 </section>
 <script>
+<script>
+// Geotek Fly-in + Climate Slideshow
 const whatObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
@@ -86,6 +88,16 @@ const whatObserver = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.15 });
 whatObserver.observe(document.getElementById('what-middle'));
+
+// Climate Education Slideshow - only background changes
+let climateIndex = 0;
+const climateSlides = document.querySelectorAll('.slide-left');
+setInterval(() => {
+  climateSlides[climateIndex].style.opacity = '0';
+  climateIndex = (climateIndex + 1) % climateSlides.length;
+  climateSlides[climateIndex].style.opacity = '1';
+}, 4000);
+</script>
 </script>
   <div class="sdg-track">
     
