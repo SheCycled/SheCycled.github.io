@@ -73,15 +73,16 @@ footer{background:#0a4d2e;color:white;text-align:center;padding:30px 20px;margin
         <p style="margin:0; font-size:13px;">Transforming agro-wastes into sustainable biodegradable pads.</p>
       </div>
     </div>
-    <div id="what-right" style="width:100%; max-width:330px; height:380px; border-radius:20px; overflow:hidden; position:relative; box-shadow:0 10px 30px rgba(0,0,0,0.13); margin-top:0px; transform:translateX(120px); opacity:0; transition:all 1.2s cubic-bezier(0.22,1,0.36,1) 0.5s;">
-      <img src="IMG-20260919-WA6089.jpg" style="width:100%; height:100%; object-fit:cover; object-position:center;">
-      <div style="position:absolute; inset:0; background:linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(20,80,25,0.85));"></div>
+        <div id="what-right" style="width:100%; max-width:330px; height:380px; border-radius:20px; overflow:hidden; position:relative; box-shadow:0 10px 30px rgba(0,0,0,0.13); margin-top:0px; transform:translateX(120px); opacity:0; transition:all 1.2s cubic-bezier(0.22,1,0.36,1) 0.5s;">
+      <img class="mhd-slide" src="FB_IMG_1778698789975 (1).jpg" style="width:100%; height:100%; object-fit:cover; position:absolute; inset:0; opacity:1; transition:opacity 1.5s ease-in-out;">
+      <img class="mhd-slide" src="IMG-20261020-WA8410 (1).jpg" style="width:100%; height:100%; object-fit:cover; position:absolute; inset:0; opacity:0; transition:opacity 1.5s ease-in-out;">
+      <img class="mhd-slide" src="IMG-20261025-WA8433.jpg" style="width:100%; height:100%; object-fit:cover; position:absolute; inset:0; opacity:0; transition:opacity 1.5s ease-in-out;">
+      <div style="position:absolute; inset:0; background:linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(20,80,25,0.85)); z-index:1;"></div>
       <div style="position:absolute; bottom:0; left:0; width:100%; padding:20px; color:white; z-index:2;">
         <h3 style="margin:0 0 5px; font-size:19px;">Menstrual Health & Dignity</h3>
         <p style="margin:0; font-size:13px;">Addressing period poverty among underserved women and girls.</p>
       </div>
     </div>
-  </div>
 </section>
 <script>
 const whatObserver = new IntersectionObserver((entries) => {
@@ -104,6 +105,24 @@ const circSlides = document.querySelectorAll('.circular-slider');
 setInterval(()=>{
   circSlides.forEach((img,i)=> img.style.opacity = i===circIndex ? '1' : '0');
   circIndex = (circIndex+1) % circSlides.length;
+}, 3500);
+</script>
+  <script>
+let mhdIndex = 0;
+const mhdSlides = document.querySelectorAll('.mhd-slide');
+setInterval(() => {
+  mhdSlides[mhdIndex].style.opacity = '0';
+  mhdIndex = (mhdIndex + 1) % mhdSlides.length;
+  mhdSlides[mhdIndex].style.opacity = '1';
+}, 3500);
+</script>
+
+<script>
+let climateIndex = 0;
+const climateSlides = document.querySelectorAll('.climate-slider');
+setInterval(()=>{
+  climateSlides.forEach((img,i)=> img.style.opacity = i===climateIndex ? '1' : '0');
+  climateIndex = (climateIndex+1) % climateSlides.length;
 }, 3500);
 </script>
   <h2 class="section-title" style="text-align:center; color:#0a4d2e;">Here's How We Contribute to the SDGs</h2>
