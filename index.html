@@ -17,6 +17,25 @@ nav a{color:white;margin:0 14px;text-decoration:none;font-weight:bold;font-size:
 .btn{background:#ffd166;color:#0a4d2e;border:none;padding:13px 28px;font-size:16px;font-weight:bold;border-radius:30px;cursor:pointer;display:inline-block;text-decoration:none}
 section{padding:50px 20px;max-width:1100px;margin:auto}
 h2.section-title{text-align:center;color:#0a4d2e;font-size:30px;margin-bottom:30px}
+.order-pads-btn{
+  position: absolute;
+  left: 30px;
+  bottom: 25px;
+  background: white;
+  color: #0a4d2e;
+  padding: 16px 30px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 17px;
+  text-decoration: none;
+  animation: pulse-white 2s infinite;
+  z-index: 10;
+}
+@keyframes pulse-white{
+  0%{ box-shadow: 0 0 0 0 rgba(255,255,255,0.7); }
+  70%{ box-shadow: 0 0 0 18px rgba(255,255,255,0); }
+  100%{ box-shadow: 0 0 0 0 rgba(255,255,255,0); }
+}  
 .cards{display:flex;gap:20px;flex-wrap:wrap;justify-content:center}
 .card{background:white;box-shadow:0 3px 12px rgba(0,0,0,0.08);border-radius:14px;padding:22px;width:300px;text-align:center}
 .sdg-grid{display:flex;gap:20px;flex-wrap:wrap;justify-content:center}
@@ -40,6 +59,7 @@ footer{background:#0a4d2e;color:white;text-align:center;padding:30px 20px;margin
 <div class="hero">
 <h2>Transforming Environmental Waste To Dignity </h2>
 <p> A circular economy social enterprise that promotes climate education, transforms agricultural waste into biodegradable sanitary pads to advance mentrual health and dignity.</p>
+  <a href="https://wa.me/234XXXXXXXXXX?text=Hi%20SheCycled!%20I%20want%20to%20order%20sanitary%20pads." class="order-pads-btn">Order Pads Now →</a
 
   </div>
 </section>
